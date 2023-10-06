@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style.css">
+  <title>Лабораторна робота №2</title>
+</head>
+
+<body>
+  <header>
+    <h1>Розробка Інтернет клієнт-серверних систем: Лабораторна робота №2</h1>
+    <h3>Варіант 1</h3>
+  </header>
+  <main>
+    <!--
+      1. Створити сторінку, яка відобразить повідомлення з проханням ввести ваше
+      імя, а потім повідомлення з текстом «Привіт, [Ваше імя]». Сам скрипт
+      повинен підключатись до сторінки.
+    -->
+    <div class="container">
+      <div class="task">
+        <p>
+          1. Створити сторінку, яка відобразить повідомлення з проханням ввести ваше
+          імя, а потім повідомлення з текстом «Привіт, [Ваше імя]». Сам скрипт
+          повинен підключатись до сторінки.
+        </p>
+      </div>
+      <h2>Введіть ваше ім'я:</h2>
+      <input type="text" id="nameInput">
+      <button onclick="sayHello()">Привіт</button>
+      <p id="greetingMessage"></p>
+    </div>
+    <!-- 
+      2. Напишіть скрипт, який знаходить площу прямокутника з висотою 23см і
+      шириною 10см, значення площі повинно зберігатися в числовій змінній s.
+    -->
+    <div class="container">
+      <div class="task">
+        <p>
+          2. Напишіть скрипт, який знаходить площу прямокутника з висотою 23см і
+          шириною 10см, значення площі повинно зберігатися в числовій змінній s.
+        </p>
+      </div>
+      <p id="triangleMessage"></p>
+    </div>
+    <!--
+      3. Створіть скрипт який запитує у користувача суму його зарплати. Потім
+      розраховуєте:
+      - Премію у сумі 15% від зарплати
+      - Податки в сумі 10% від суми всіх нарахувань (зарплата + премія)
+      - Витрати в магазині на суму 190
+      - Виводите суму, що залишилась у користувача.
+    -->
+    <div class="container">
+      <div class="task">
+        <p>
+          3. Створіть скрипт який запитує у користувача суму його зарплати. Потім
+          розраховуєте:
+          - Премію у сумі 15% від зарплати
+          - Податки в сумі 10% від суми всіх нарахувань (зарплата + премія)
+          - Витрати в магазині на суму 190
+          - Виводите суму, що залишилась у користувача.
+        </p>
+      </div>
+      <h2>Введіть суму:</h2>
+      <input type="number" id="salaryInput">
+      <button onclick="calculateFinances()">Розрахувати</button>
+      <p>Залишок після розрахунків: <span id="remainingAmount"></span></p>
+    </div>
+    <!--
+      4. Використовуючи конструкцію if...else, напишіть код, який буде питати:
+      «Яка офіційна назва JavaScript?". Якщо користувач вводить
+      «ECMAScript», то показати: «Правильно!», в іншому випадку -
+      відобразити: «Не знаєте? ECMAScript!».
+    -->
+    <div class="container">
+      <div class="task">
+        <p>
+          4. Використовуючи конструкцію if...else, напишіть код, який буде питати:
+          «Яка офіційна назва JavaScript?". Якщо користувач вводить
+          «ECMAScript», то показати: «Правильно!», в іншому випадку -
+          відобразити: «Не знаєте? ECMAScript!».
+        </p>
+      </div>
+      <h2>Яка офіційна назва JavaScript?</h2>
+      <input type="text" id="answerInput">
+      <button onclick="checkAnswer()">Перевірити</button>
+      <p id="quiz-result"></p>
+    </div>
+    <!--
+      5. Перепишіть завдання 4 з використанням операторів '?'.
+    -->
+    <div class="container">
+      <div class="task">
+        <p>
+          5. Перепишіть завдання 4 з використанням операторів '?'.
+        </p>
+      </div>
+      <h2>Яка офіційна назва JavaScript?</h2>
+      <input type="text" id="answerInput2">
+      <button onclick="checkAnswer2()">Перевірити</button>
+      <p id="quiz-result2"></p>
+    </div>
+    <!--
+      6. За допомогою циклу for виведіть парні числа від 2 до 10.
+    -->
+    <div class="container">
+      <div class="task">
+        <p>
+          6. За допомогою циклу for виведіть парні числа від 2 до 10.
+        </p>
+      </div>
+      <p id="numbers-result"></p>
+    </div>
+    <!--
+      7. Напишіть if..else, який відповідає наступному switch:
+        switch (browser) {
+        case 'Edge':
+        alert( "У вас браузер Edge!" );
+        break;
+        case 'Chrome':
+        case 'Firefox':
+        case 'Safari':
+        case 'Opera':
+        alert( 'Ми підтримуємо ці браузери також' );
+        break;
+        default:
+        alert( 'Ми надіємось, що ця сторінка коректно відображається!' );
+        }
+    -->
+    <div class="container">
+      <div class="task">
+        <p>
+          7. Напишіть if..else, який відповідає наступному switch:
+          switch (browser) {
+          case 'Edge':
+          alert( "У вас браузер Edge!" );
+          break;
+          case 'Chrome':
+          case 'Firefox':
+          case 'Safari':
+          case 'Opera':
+          alert( 'Ми підтримуємо ці браузери також' );
+          break;
+          default:
+          alert( 'Ми надіємось, що ця сторінка коректно відображається!' );
+          }
+        </p>
+      </div>
+      <h2>Введіть ваш браузер:</h2>
+      <input type="text" id="browserInput">
+      <button onclick="checkBrowser()">Перевірити</button>
+      <p id="browser-result"></p>
+    </div>
+    <!--
+      8. Напишіть функцію min(a,b), яка повертає наймешне з чисел a і b.
+      Приклад викликів:
+      min(2, 5) == 2
+      min(3, -1) == -1
+      min(1, 1) == 1
+    -->
+    <div class="container">
+      <div class="task">
+        <p>
+          8. Напишіть функцію min(a,b), яка повертає наймешне з чисел a і b.
+          Приклад викликів:
+          min(2, 5) == 2
+          min(3, -1) == -1
+          min(1, 1) == 1
+        </p>
+      </div>
+      <p id="min-value"></p>
+    </div>
+    <!--
+      Замініть код Function Expression стрілковою функцією:
+      function ask(question, yes, no) {
+      if (confirm(question)) yes()
+      else no();
+      }
+      ask(
+      "Ви згодні?",
+      function() { alert("Ви згодні."); },
+      function() { alert("Ви відмінили виконання."); }
+      );
+    -->
+    <div class="container">
+      <div class="task">
+        <p>
+          Замініть код Function Expression стрілковою функцією:
+          function ask(question, yes, no) {
+          if (confirm(question)) yes()
+          else no();
+          }
+          ask(
+          "Ви згодні?",
+          function() { alert("Ви згодні."); },
+          function() { alert("Ви відмінили виконання."); }
+          );
+        </p>
+      </div>
+      <button onclick="access()">Запитати згоду</button>
+    </div>
+    <!--
+      10.Напишіть функцію reverse(), яка перевертає число. Наприклад:
+      reverse(1234);
+      //4321
+    -->
+    <div class="container">
+      <div class="task">
+        <p>
+          10.Напишіть функцію reverse(), яка перевертає число. Наприклад:
+          reverse(1234);
+          //4321
+        </p>
+      </div>
+      <h2>Введіть число:</h2>
+      <input type="number" id="reverseNumberInput">
+      <button onclick="reverseNumber()">Перевернути</button>
+      <p id="reverseNumberResult"></p>
+    </div>
+    <script src="js/script.js"></script>
+  </main>
+  <footer></footer>
+</body>
+
+</html>
