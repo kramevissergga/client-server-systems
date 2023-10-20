@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style.css">
+  <title>Лабораторна робота №3</title>
+</head>
+
+<body>
+  <header>
+    <h1>Розробка Інтернет клієнт-серверних систем:<br>Лабораторна робота №3</h1>
+    <h3>Варіант 1</h3>
+  </header>
+  <main>
+
+    <div class="container">
+      <div class="task">
+        <p>
+          1. Напишіть функцію isEmpty(obj), яка повертає true, якщо у об’єкта немає
+          властивостей, в іншому випадку - false.
+        </p>
+      </div>
+      <p id="task-1-p"></p>
+    </div>
+
+    <div class="container">
+      <div class="task">
+        <p>
+          2. Створіть об’єкт calculator з трьома методами:
+          - read() – запитує два значення за допомогою prompt і зберігає їх як
+          властивості об’єкта.
+          - sum() – повертає суму збережених значень.
+          - mul() – множить збережені значення і повертає результат.
+        </p>
+      </div>
+      <button onclick="calc()">Калькулятор</button>
+      <p id="task-2-p"></p>
+    </div>
+
+    <div class="container">
+      <div class="task">
+        <p>
+          3. Створіть об’єкт week з днями тижня. Ключами в ньому будуть номери днів від
+          початку тижня(понеділок – 1 і т.д.). Виведіть на екран поточний день тижня.
+        </p>
+      </div>
+      <p id="task-3-p"></p>
+    </div>
+
+    <div class="container">
+      <div class="task">
+        <p>
+          4. Напишіть функцію, яка глибоко знаходить перетин об’єктів і повертає об’єкт
+          перетину.
+          Наприклад:
+          const data = { a: 1, b: { c: 3 } };
+          const data2 = { c: 1, b: { c: 3 } };
+          intersectionDeep(data, data2); // { b: { c: 3 } }
+        </p>
+      </div>
+      <p id="task-4-p"></p>
+    </div>
+
+    <div class="container">
+      <div class="task">
+        <p>
+          5. Напишіть функцію, яка робить глибоку перевірку на пустоту об’єкта. Пустими
+          значеннями є: '', null, NaN, undefined, [], {}
+          Наприклад:
+
+          const data = { a: { b: undefined } };
+          const data2 = { a: { b: 1 } };
+          isEmptyDeep(data); // true
+          isEmptyDeep(data2); // false
+        </p>
+      </div>
+      <p id="task-5-p"></p>
+    </div>
+    <script src="js/script.js"></script>
+  </main>
+  <footer></footer>
+</body>
+
+</html>
