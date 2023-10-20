@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="ua">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style.css">
+  <title>Лабораторна робота №4</title>
+</head>
+
+<body>
+  <header>
+    <h1>Розробка Інтернет клієнт-серверних систем:<br>Лабораторна робота №4</h1>
+    <h3>Варіант 1</h3>
+  </header>
+  <main>
+
+    <div class="container">
+      <div class="task">
+        <p>
+          1. Дано масив arr. Створіть функцію unique(arr), яка повертає масив унікальних
+          значень з масиву arr.
+        </p>
+      </div>
+      <p id="task-1-p"></p>
+    </div>
+
+    <div class="container">
+      <div class="task">
+        <p>
+          2. Напишіть функцію average(), яка приймає масив об’єктів користувачів і
+          повертає середній вік.
+        </p>
+      </div>
+      <p id="task-2-p"></p>
+    </div>
+
+    <div class="container">
+      <div class="task">
+        <p>
+          3. Дано масив об’єктів користувачів, кожен з яких містить name,surname,age. На
+          основі нього потрібно сформувати новий масив об’єктів з параметрами
+          username (складається з name і surname в першому масиві) та age.
+        </p>
+      </div>
+      <p id="task-3-p"></p>
+    </div>
+
+    <div class="container">
+      <div class="task">
+        <p>
+          4. Напишіть функцію filtered(arr,a,b), яка приймає масив, шукає в ньому
+          елементи в діапазоні між а і b, і виводить їх в новому масиві. Наприклад:
+          let numbers = [4, 8, 6, 3, 9, 1, 5];
+          let new = filtered(numbers,1,4);
+          alert(new); //4,3,1
+        </p>
+      </div>
+      <p id="task-4-p"></p>
+    </div>
+
+    <div class="container">
+      <div class="task">
+        <p>
+          5. Дано масив, в якому потрібно знайти неперервний підмасив, сума елементів
+          якого є найбільшою. Написати функцію sum(), яка повертає цю суму.
+        </p>
+      </div>
+      <p id="task-5-p"></p>
+    </div>
+    <div class="container">
+      <div class="task">
+        <p>
+          6. Напишіть функцію getWeekDay(date), яка буде виводити день тижня текстом.
+        </p>
+      </div>
+      <p id="task-6-p"></p>
+    </div>
+    <div class="container">
+      <div class="task">
+        <p>
+          7. Напишіть функцію lastDay(year, month), яка повертає останнє число місяця.
+        </p>
+      </div>
+      <p id="task-7-p"></p>
+    </div>
+    <div class="container">
+      <div class="task">
+        <p>
+          8. Напишіть функцію getMinute(date), яка повертає кількість хвилин, які
+          пройшли з заданої дати date.
+        </p>
+      </div>
+      <button onclick="updateMinutes()">Оновити</button>
+      <p id="task-8-p"></p>
+    </div>
+    <div class="container">
+      <div class="task">
+        <p>
+          9. За допомогою prompt почергово запитуйте користувача його призвіще, імя, по
+          батькові, вік, дату народження. Дані занесіть в масив, а потім перетворіть його
+          в JSON.
+        </p>
+      </div>
+      <button onclick="interview()">Пройти інтерв'ю</button>
+      <p id="task-9-p"></p>
+    </div>
+    <div class="container">
+      <div class="task">
+        <p>
+          10.Напишіть функцію holidays(date), яка приймає дату date, і перевіряє чи це
+          вихідний день. Якщо вихідний – виводимо дату червоним і надпис «ми
+          зачинені». Вихідними вважаються субота і неділя.
+        </p>
+        <button onclick="holidays(new Date())">Перевірити на завтра</button>
+      </div>
+      <p id="task-10-p"></p>
+    </div>
+    <script src="js/script.js"></script>
+  </main>
+  <footer></footer>
+</body>
+
+</html>
