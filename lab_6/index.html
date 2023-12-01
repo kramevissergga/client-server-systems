@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style.css">
+  <title>lab 6</title>
+</head>
+
+<body>
+  <div class="wrapper">
+    <header class="header">
+      The header is not yet implemented.
+    </header>
+    <main class="page">
+      <div class="page__container">
+        <h1 class="page__title">Лабораторна робота №6</h1>
+        <h2 class="page__subtitle">Варіант 1</h2>
+        <div class="tasks">
+          <div class="tasks__item task">
+            <div class="task__description">
+              <p>
+                1. Створіть клас Person, який має приватні властивості firstName та lastName.
+                Використайте гетер та сетер для отримання та встановлення значень цих
+                властивостей. Напишіть метод getFullName, який повертає повне ім'я
+                особи у форматі "Прізвище Ім'я". Створіть екземпляр класу Person і
+                використайте гетер та сетер для зміни та отримання значень властивостей.
+                Виведіть повне ім'я в консоль.
+              </p>
+            </div>
+            <div class="task__body">
+              <p id="task1Result"></p>
+            </div>
+          </div>
+
+          <div class="tasks__item task">
+            <div class="task__description">
+              <p>
+                2. Створіть об'єкт country, який має прості властивості: name, capital,
+                population.
+                Використайте дескриптори властивостей для налаштування різних
+                параметрів властивостей, наприклад, зробіть властивість name
+                неперезаписуваною.
+                Створіть метод displayInfo, який виводить інформацію про країну у
+                консоль, використовуючи значення властивостей та їх дескриптори.
+                Змініть значення властивостей та спробуйте перезаписати
+                неперезаписувану властивість, спостерігаючи за реакцією.
+              </p>
+            </div>
+            <div class="task__body">
+              <p id="task2Result"></p>
+            </div>
+          </div>
+
+          <div class="tasks__item task">
+            <div class="task__description">
+              <p>
+                3. Реалізуйте клас MyString, який буде мати наступні методи: метод reverse(),
+                який параметром приймає рядок, а повертає його в перевернутому вигляді,
+                метод ucFirst(), який параметром приймає рядок, а повертає цей рядок,
+                зробивши його першу букву великою і метод ucWords, який приймає рядок
+                і робить великою першу букву кожного слова.
+              </p>
+            </div>
+            <div class="task__body">
+              <p id="task3Result"></p>
+            </div>
+          </div>
+
+          <div class="tasks__item task">
+            <div class="task__description">
+              <p>
+                4. Створіть клас Student (Студент), який буде успадковуватись від класу User.
+                Цей клас повинен мати наступні властивості: name (імя, успадковується від
+                User), surname (прізвище, успадковується від User), year (рік вступу до
+                ВНЗ). Клас повинен мати метод getFullName() (успадковується від User),
+                за допомогою якого можна вивести одночасно імя і прізвище студента.
+                Також клас повинен мати метод getCourse(), який буде виводити поточний
+                курс студента (від 1 до 5). Курс обчислюється так: потрібно від поточного
+                року відняти рік поступлення.
+              </p>
+            </div>
+            <div class="task__body">
+              <p id="task4Result"></p>
+            </div>
+          </div>
+
+          <div class="tasks__item task">
+            <div class="task__description">
+              <p>
+                5. У нас є деякий об’єкт obj, який створений функцією-конструктором – ми
+                не знаємо який саме, але хочемо створити ще один об’єкт такого самого
+                типу. Створіть функцію-конструктор для об’єкта obj, з якою виклик
+                let obj2 = new obj.constructor(); правильно буде працювати. І
+                створіть функцію-конструктор, з якою такий код буде вести себе
+                неправильно.
+              </p>
+            </div>
+            <div class="task__body">
+              <p id="task5Result"></p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <script src="js/script.js">
+      </script>
+    </main>
+    <footer class="footer">
+      The footer is not yet implemented.
+    </footer>
+  </div>
+</body>
+
+</html>
