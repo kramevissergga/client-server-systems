@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style.css">
+  <title>lab 8</title>
+</head>
+
+<body>
+  <div class="wrapper">
+    <header class="header">
+      <div class="header__content"></div>
+    </header>
+    <main class="page">
+      <div class="page__container">
+        <h1 class="page__title">Лабораторна робота №8</h1>
+        <h2 class="page__subtitle">Варіант 1</h2>
+        <div class="tasks">
+          <div class="tasks__item task">
+            <div class="task__description">
+              <p>
+                1. Створіть функцію, яка ділить число на нуль. Використайте конструкцію
+                try...catch для обробки помилки.
+              </p>
+            </div>
+            <div class="task__body">
+              <button class="task__button" onclick="divideByZero();">Виконати</button>
+              <p class="task__result" id="task-1-result"></p>
+            </div>
+          </div>
+
+          <div class="tasks__item task">
+            <div class="task__description">
+              <p>
+                2. Створіть функцію з некоректним викликом (наприклад, виклик функції,
+                яка не існує). Використайте try...catch, щоб впоратися з помилкою виклику
+                функції.
+              </p>
+            </div>
+            <div class="task__body">
+              <button class="task__button" onclick="invalidFunctionCall();">Виконати</button>
+              <p class="task__result" id="task-2-result"></p>
+            </div>
+          </div>
+
+          <div class="tasks__item task">
+            <div class="task__description">
+              <p>
+                3. Спробуйте розпарсити некоректний JSON-рядок. Використайте try...catch,
+                щоб обробити помилки парсингу.
+              </p>
+            </div>
+            <div class="task__body">
+              <button class="task__button" onclick="parseInvalidJSON();">Виконати</button>
+              <p class="task__result" id="task-3-result"></p>
+            </div>
+          </div>
+
+          <div class="tasks__item task">
+            <div class="task__description">
+              <p>
+                4. Створіть дві асинхронні функції, які модифікують один і той самий об'єкт.
+                Використайте try...catch, щоб уникнути колізій або конфліктів при доступі
+                до об'єкту.
+              </p>
+            </div>
+            <div class="task__body">
+              <button class="task__button" onclick="runAsyncFunctions();">Виконати</button>
+              <div class="task__result" id="task-4-result">
+
+              </div>
+            </div>
+          </div>
+
+          <div class="tasks__item task">
+            <div class="task__description">
+              <p>
+                5. Створіть асинхронну функцію, яка завершується помилкою через певний
+                час. Використайте try...catch, щоб обробити таку асинхронну помилку.
+              </p>
+            </div>
+            <div class="task__body">
+              <button class="task__button" onclick="asyncFunctionWithError();">Виконати</button>
+              <p class="task__result" id="task-5-result"></p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <script src="js/script.js">
+      </script>
+    </main>
+    <footer class="footer">
+      <div class="footer__content"></div>
+    </footer>
+  </div>
+</body>
+
+</html>

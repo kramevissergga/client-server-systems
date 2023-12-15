@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style.css">
+  <title>lab 9</title>
+</head>
+
+<body>
+  <div class="wrapper">
+    <header class="header">
+      <div class="header__content"></div>
+    </header>
+    <main class="page">
+      <div class="page__container">
+        <h1 class="page__title">Лабораторна робота №9</h1>
+        <h2 class="page__subtitle">Варіант 1</h2>
+        <div class="tasks">
+          <div class="tasks__item task">
+            <div class="task__description">
+              <p>
+                1. Напишіть функцію, яка викликає callback через певну затримку
+                (наприклад, 2 секунди).
+              </p>
+            </div>
+            <div class="task__body">
+              <button onclick="startDelayedCallback()" class="task__button">Виконати</button>
+              <p id="task-1-result"></p>
+            </div>
+          </div>
+
+          <div class="tasks__item task">
+            <div class="task__description">
+              <p>
+                2. Напишіть функцію, яка фільтрує масив за допомогою callback-функції.
+              </p>
+            </div>
+            <div class="task__body">
+              <button class="task__button" onclick="filterArray(isEven)">Фільтрувати масив</button>
+              <p id="task-2-result"></p>
+            </div>
+          </div>
+
+          <div class="tasks__item task">
+            <div class="task__description">
+              <p>
+                3. Напишіть функцію, яка виконує послідовність запитів до сервера з
+                використанням callback для кожного запиту.
+              </p>
+            </div>
+            <div class="task__body">
+              <p id="task-3-result"></p>
+            </div>
+          </div>
+
+          <div class="tasks__item task">
+            <div class="task__description">
+              <p>
+                4. Напишіть функцію, яка використовує callback для керування потоками
+                даних на клієнтській стороні.
+              </p>
+            </div>
+            <div class="task__body">
+              <button class="task__button" onclick="handleData()">Обробити дані</button>
+              <p id="task-4-result"></p>
+            </div>
+          </div>
+
+          <div class="tasks__item task">
+            <div class="task__description">
+              <p>
+                5. Створіть Promise, який вирішується з певним результатом. Використайте
+                метод .then() для обробки результату.
+              </p>
+            </div>
+            <div class="task__body">
+            </div>
+          </div>
+          <div class="tasks__item task">
+            <div class="task__description">
+              <p>
+                5. Створіть Promise, який вирішується з певним результатом. Використайте
+                метод .then() для обробки результату.
+              </p>
+            </div>
+            <div class="task__body">
+            </div>
+          </div>
+          <div class="tasks__item task">
+            <div class="task__description">
+              <p>
+                6. Використайте Promise.reject() для створення відхиленого Promise з певною
+                помилкою.
+              </p>
+            </div>
+            <div class="task__body">
+            </div>
+          </div>
+          <div class="tasks__item task">
+            <div class="task__description">
+              <p>
+                7. Створіть Promise.race(), який залежить від найшвидшого завершення
+                Promise з групи.
+              </p>
+            </div>
+            <div class="task__body">
+            </div>
+          </div>
+          <div class="tasks__item task">
+            <div class="task__description">
+              <p>
+                8. Створіть свій клас Promise, який має схожий інтерфейс та поведінку зі
+                стандартним Promise.
+              </p>
+            </div>
+            <div class="task__body">
+            </div>
+          </div>
+          <div class="tasks__item task">
+            <div class="task__description">
+              <p>
+                9. Створіть програму, яка виконує декілька паралельних асинхронних
+                операцій з використанням async/await.
+              </p>
+            </div>
+            <div class="task__body">
+            </div>
+          </div>
+          <div class="tasks__item task">
+            <div class="task__description">
+              <p>
+                10.Створіть асинхронну функцію, яка використовує await для послідовного
+                виконання операцій та обробки помилок з try/catch.
+              </p>
+            </div>
+            <div class="task__body">
+            </div>
+          </div>
+        </div>
+      </div>
+      <script src="js/script.js">
+      </script>
+    </main>
+    <footer class="footer">
+      <div class="footer__content"></div>
+    </footer>
+  </div>
+</body>
+
+</html>
