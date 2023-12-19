@@ -50,8 +50,9 @@
                 використанням callback для кожного запиту.
               </p>
             </div>
-            <div class="task__body">
-              <p id="task-3-result"></p>
+            <div class="task__body" id="task-3-body">
+              <button class="task__button" id="task-3-button">Поглянути на котиків</button>
+              <div id="task-3-content"></div>
             </div>
           </div>
 
@@ -67,7 +68,6 @@
               <p id="task-4-result"></p>
             </div>
           </div>
-
           <div class="tasks__item task">
             <div class="task__description">
               <p>
@@ -76,16 +76,8 @@
               </p>
             </div>
             <div class="task__body">
-            </div>
-          </div>
-          <div class="tasks__item task">
-            <div class="task__description">
-              <p>
-                5. Створіть Promise, який вирішується з певним результатом. Використайте
-                метод .then() для обробки результату.
-              </p>
-            </div>
-            <div class="task__body">
+              <button class="task__button" id="task-5-button">Promise</button>
+              <p id="task-5-result"></p>
             </div>
           </div>
           <div class="tasks__item task">
@@ -96,6 +88,7 @@
               </p>
             </div>
             <div class="task__body">
+              <p id="task-6-result"></p>
             </div>
           </div>
           <div class="tasks__item task">
@@ -106,16 +99,7 @@
               </p>
             </div>
             <div class="task__body">
-            </div>
-          </div>
-          <div class="tasks__item task">
-            <div class="task__description">
-              <p>
-                8. Створіть свій клас Promise, який має схожий інтерфейс та поведінку зі
-                стандартним Promise.
-              </p>
-            </div>
-            <div class="task__body">
+              <p id="task-7-result"></p>
             </div>
           </div>
           <div class="tasks__item task">
@@ -126,6 +110,9 @@
               </p>
             </div>
             <div class="task__body">
+              <button onclick="executeParallelAsyncOperations()" class="task__button">Виконати асинхронні
+                операції</button>
+              <p id="task-9-result"></p>
             </div>
           </div>
           <div class="tasks__item task">
@@ -136,6 +123,9 @@
               </p>
             </div>
             <div class="task__body">
+              <button onclick="executeSequentialAsyncOperations()" class="task__button">Виконати асинхронні
+                операції</button>
+              <p id="task-10-result"></p>
             </div>
           </div>
         </div>

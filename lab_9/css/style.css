@@ -83,6 +83,16 @@ body {
   font-size: 14px;
   transition: background-color 0.2s;
 }
+#task-3-content {
+  display: grid;
+  max-width: 500px;
+  gap: 50px;
+  overflow: hidden;
+}
+#task-3-content img {
+  width: 100%;
+  object-fit: cover;
+}
 @media (any-hover: hover) {
   .task__button:hover {
     background-color: #780987;
