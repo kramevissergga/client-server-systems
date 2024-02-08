@@ -56,9 +56,9 @@ const country = {
   },
 
   displayInfo() {
-    console.log(
-      `Name: ${this._name}, Capital: ${this._capital}, Population: ${this._population}`
-    );
+    document.getElementById(
+      "task2Result"
+    ).innerText = `Name: ${this._name}, Capital: ${this._capital}, Population: ${this._population}`;
   },
 };
 
@@ -67,7 +67,6 @@ country._capital = "Kyiv";
 country._population = 42000000;
 
 country.displayInfo();
-document.getElementById("task2Result").innerText = "Check console for output";
 
 class MyString {
   reverse(str) {
